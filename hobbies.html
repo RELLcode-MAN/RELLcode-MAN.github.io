@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavarius james Portfoilo 👍</title>
+
+    <!-- Bootstrap 4.3 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .hobby-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.2s ease;
+        }
+        .hobby-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .hobby-title {
+            color: #4a4a8a;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index .html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="traval.html">Travel</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" data-toggle="dropdown">
+                        My Recipes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recipesDropdown">
+                        <a class="dropdown-item active" href="recipe_v3.html">V3: Bootstrap</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="recipe_v1.html">V1: HTML Only</a>
+                        <a class="dropdown-item" href="recipe_v2.html">V2: CSS Styled</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://lanetech.org/" target="_blank">School!</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container py-5">
+
+    <h1 class="text-center mb-2" style="color:#4a4a8a; font-size:2.6rem;">
+        My Hobbies
+    </h1>
+
+    <p class="text-center subtitle">
+        A few things I love doing in my free time.
+    </p>
+
+    <!-- HOBBIES GRID -->
+    <div class="row g-4">
+
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="hobby-card">
+                <h2 class="hobby-title">Drawing</h2>
+                <p>
+                    I love sketching characters, ideas, and anything that pops into my imagination.
+                    Drawing helps me relax and express myself creatively.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="hobby-card">
+                <h2 class="hobby-title">Watching Football</h2>
+                <p>
+                    I enjoy watching games with my family.
+                    .
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="hobby-card">
+                <h2 class="hobby-title">Gaming</h2>
+                <p>
+                    I like playing all sorts games fps, stratagy, RNG, openworld, ect .
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="hobby-card">
+                <h2 class="hobby-title">Music</h2>
+                <p>
+                    Music helps me focus while drawing and keeps me motivated.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MEDIA SECTION -->
+    <section id="media" class="mb-5 py-5">
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4">Media Gallery</h2>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+                <h4>Video</h4>
+                <p class="text-muted">Check out this video introduction on coding:</p>
+                <video width="100%" height="auto" controls class="rounded shadow-sm">
+                    <source src="Media/portfolio-intro.mp4" type="video/mp4">
+                    <source src="Media/portfolio-intro.webm" type="video/webm">
+                </video>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <h4>Audio Introduction</h4>
+                <p class="text-muted">Listen to a random Audio :</p>
+
+                <div class="card p-3">
+                    <audio width="100%" controls class="w-100">
+                        <source src="Media/soundloop.mp3" type="audio/mpeg">
+                        <source src="Media/intro-audio.ogg" type="audio/ogg">
+                    </audio>
+                </div>
+
+                <small class="text-muted d-block mt-2">
+                </small>
+            </div>
+
+        </div>
+
+    </section>
+
+</div> <!-- END CONTAINER -->
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4.3 Starter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index .html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="traval.html">Travel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="recipesDropdown" role="button" data-toggle="dropdown">
+                            My Recipes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="recipesDropdown">
+                            <a class="dropdown-item active" href="recipe_v3.html">V3: Bootstrap </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="recipe_v1.html">V1: HTML Only</a>
+                            <a class="dropdown-item" href="recipe_v2.html">V2: CSS Styled </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://lanetech.org/" target="_blank">School!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Hobbies</title>
+
+<link 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+  rel="stylesheet">
+
+<style>
+   
+    .hobby-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        transition: 0.2s ease;
+    }
+
+    .hobby-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .hobby-title {
+        color: #4a4a8a;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        color: #666;
+        margin-bottom: 40px;
+    }
+</style>
+
+    <h1 class="text-center mb-2" style="color:#4a4a8a; font-size:2.6rem;">
+        My Hobbies
+    </h1>
+    <p class="text-center subtitle">
+        A few things I love doing in my free time.
+    </p>
+
+    <div class="row g-4">
+
+        <div class="col-md-4 col-lg-3">
+            <div class="hobby-card">
+                <h2 class="hobby-title"> Drawing</h2>
+                <p>
+                    I love sketching characters, ideas, and anything that pops into my imagination.
+                    Drawing helps me relax and express myself creatively.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="hobby-card">
+                <h2 class="hobby-title">Watching Football</h2>
+                <p>
+                    I enjoy watching games with my family.
+                    .
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="hobby-card">
+                <h2 class="hobby-title"> Gaming</h2>
+                <p>
+                    I like playing all sorts games fps, stratagy, RNG, openworld, ect .
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="hobby-card">
+                <h2 class="hobby-title"> Music</h2>
+                <p>
+                    Music helps me focus while drawing and keeps me motivated.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Media Section -->   <!----
+        <section id="media" class="mb-5 py-5">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-4">Media Gallery</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4>Video </h4>
+                    <p class="text-muted">Check out this video introduction on coding:</p>
+                    <video width="100%" height="auto" controls class="rounded shadow-sm">
+                        <source src="Media/portfolio-intro.mp4" type="video/mp4">
+                        <source src="Media/portfolio-intro.webm" type="video/webm">
+                    </video>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>Audio Introduction</h4>
+                    <p class="text-muted">Listen to my professional introduction:</p>
+                    <div class="card p-3">
+                        <audio width="100%" controls class="w-100">
+                            <source src="Media/intro-audio.mp3" type="audio/mpeg">
+                            <source src="Media/intro-audio.ogg" type="audio/ogg">
+                            Your browser does not support the audio tag. Please add an MP3 or OGG audio file to the Media folder.
+                        </audio>
+                    </div>
+                    <small class="text-muted d-block mt-2">Add an MP3 or OGG audio file named "intro-audio" to your Media folder</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

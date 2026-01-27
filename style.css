@@ -1,0 +1,205 @@
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(255, 184, 0, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 184, 0, 1); }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body fade in */
+body {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Navbar animation */
+.navbar {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+/* Jumbotron animation */
+.jumbotron {
+    animation: slideInRight 0.7s ease-out;
+}
+
+/* Section animations */
+section {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Heading hover effects */
+h1, h2, h3, h4, h5, h6 {
+    transition: all 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+    color: #FFB800;
+    transform: translateX(5px);
+}
+
+/* Card animations */
+.card {
+    animation: fadeIn 0.8s ease-out;
+    transition: all 0.3s ease;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(255, 184, 0, 0.3);
+    border-color: #FFB800;
+}
+
+/* Image animations */
+img {
+    animation: fadeIn 0.8s ease-out;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Rounded image hover */
+.rounded-circle {
+    animation: fadeIn 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.08) rotateZ(5deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Badge animations */
+.badge {
+    animation: fadeIn 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+    animation: glow 1s ease-out infinite;
+}
+
+/* Progress bar animation */
+.progress-bar {
+    animation: fadeIn 1s ease-out;
+    transition: all 0.3s ease;
+}
+
+.progress-bar:hover {
+    filter: brightness(1.2);
+}
+
+/* Button animations */
+.btn {
+    transition: all 0.3s ease;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Link animations */
+a {
+    transition: all 0.3s ease;
+}
+
+a:not(.btn):hover {
+    color: #FFB800;
+}
+
+/* Table animations */
+table tbody tr {
+    animation: fadeIn 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+table tbody tr:hover {
+    background-color: #fff8e1;
+    transform: scale(1.01);
+    box-shadow: inset 0 0 10px rgba(255, 184, 0, 0.15);
+}
+
+/* Blockquote animation */
+blockquote {
+    animation: slideInLeft 0.7s ease-out;
+    transition: all 0.3s ease;
+    border-left: 4px solid #FFB800;
+    padding-left: 20px;
+}
+
+blockquote:hover {
+    transform: translateX(5px);
+    box-shadow: -4px 0 0 #FFB800;
+}
+
+/* List item animations */
+li {
+    animation: fadeIn 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+}
+
+/* Dropdown animation */
+.dropdown-menu {
+    animation: slideInLeft 0.3s ease-out;
+}
+
+/* Text animation on hover */
+p {
+    transition: all 0.3s ease;
+    animation: fadeIn 0.8s ease-out;
+}
+
+p:hover {
+    transform: translateX(2px);
+}
